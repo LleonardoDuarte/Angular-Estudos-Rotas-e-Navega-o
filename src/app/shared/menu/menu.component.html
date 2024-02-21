@@ -1,0 +1,51 @@
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a
+          routerLink="/"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <br />
+      <li>
+        <a
+          routerLink="/sobre"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Sobre</a
+        >
+      </li>
+      <br />
+      <li>
+        <a
+          routerLink="/parametrizada"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Parametrizada</a
+        >
+      </li>
+      <br />
+      <li>
+        <a
+          routerLink="/dashboard"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Dashboard, Rota filha</a
+        >
+      </li>
+      <br />
+      <li>
+        <!-- Como boa prática é importante usar o [] no direcionamento -->
+        <a
+          [routerLink]="['/404']"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Error</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
