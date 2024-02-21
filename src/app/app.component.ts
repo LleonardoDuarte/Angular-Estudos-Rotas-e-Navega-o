@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <menu-component></menu-component>
+    <router-outlet></router-outlet>
+  `,
 })
-export class AppComponent {
-  title = 'Rotas-Angular';
-}
+export class AppComponent {}
