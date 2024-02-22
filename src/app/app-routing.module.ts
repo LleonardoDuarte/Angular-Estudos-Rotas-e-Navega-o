@@ -13,11 +13,14 @@ const routes: Routes = [
     path: 'parametrizada/:id/:username',
     component: RotaParametrizadaComponent,
   },
+<<<<<<< HEAD
   {
     path: 'dashboard',
     loadChildren: () =>
       import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
+=======
+>>>>>>> 18576cd0caaa603add4395feee4767de697c5357
   { path: '404', component: PageErrorComponent },
   { path: '**', component: PageErrorComponent },
 ];

@@ -317,6 +317,7 @@ O options é usado quando quero que seja acionado a classe quando apenas exatame
   console.log(res, res.id, res.username))
   Nesse caso acima minha rota tem id e username
 
+<<<<<<< HEAD
   OBS: Para que possamos verificar os valores como res.valor é necessario no arquivo tsconfig.json colocar de true para false o seguinte parametro: "noPropertyAccessFromIndexSignature": false, se ele estiver true voce so conseguirá acessar o valor atraves de um array res.['valor']
 
 - Para acessar a rota com sucesso devemos passar na rota o id e o username exemplo:
@@ -365,6 +366,11 @@ O options é usado quando quero que seja acionado a classe quando apenas exatame
     Basicamente dentro do seu module routing principal voce adiciona um hash:true, exemplo:
     imports:[RouterModule.forRoot(routes), {useHash:true}]
 
+=======
+- Para acessar a rota com sucesso devemos passar na rota o id e o username exemplo:
+  http://localhost:4200/parametrizada/1/leonardoDuarte
+
+>>>>>>> 18576cd0caaa603add4395feee4767de697c5357
 # Sobre rotas e mudança de página no angular
 
 - Para realizar a mudança de página no angular cria-se uma nova rota no arquivo app routes e o path devera ser o que voce deseja que seja colocado no / e no component devera ser o novo componente, exemplo de duas rotas:
